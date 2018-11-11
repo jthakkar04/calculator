@@ -1,6 +1,6 @@
 //
 //  InterfaceController.swift
-//  calculator WatchKit Extension
+//  watch Extension
 //
 //  Created by Jagat Thakkar on 11/10/18.
 //  Copyright © 2018 Jagat Thakkar. All rights reserved.
@@ -11,21 +11,49 @@ import Foundation
 
 
 class InterfaceController: WKInterfaceController {
-
-    override func awake(withContext context: Any?) {
-        super.awake(withContext: context)
-        
-        // Configure interface objects here.
+    
+    func numberPressed(value: Int) {
+        let currentValue = "\(value)"
+        print(currentValue)
     }
     
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
+    @IBAction func button0Tapped() {
+        numberPressed(value: 0)
+    }
+    @IBAction func button1Tapped() {
+        numberPressed(value: 1)
     }
     
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
+    @IBAction func button2Tapped() {
+        numberPressed(value: 2)
     }
-
+    
+    @IBAction func button3Tapped() {
+        numberPressed(value: 3)
+    }
+    
+    @IBAction func button4Tapped() {
+        numberPressed(value: 4)
+    }
+    
+    @IBAction func button5Tapped() {
+        numberPressed(value: 5)
+    }
+    
+    @IBAction func button6Tapped() {
+        numberPressed(value: 6)
+    }
+    
+    @IBAction func button7Tapped() {
+        numberPressed(value: 7)
+    }
+    
+    @IBAction func button8Tapped() {
+        numberPressed(value: 8)
+    }
+    
+    @IBAction func button9Tapped() {
+        numberPressed(value: 9)
+    }
+    
 }
